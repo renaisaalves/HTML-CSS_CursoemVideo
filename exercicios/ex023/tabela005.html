@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.csexo {
+            background-color: yellow;
+        }
+
+        col.cidade {
+            background-color: turquoise;
+        }
+
+        col.cprof {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <!--colgroup serve para modificar as colunas das tabelas. Para modificar duas ou mais colunas ao mesmo tempo, eu posso criar uma classe + span="2", ex: <col class="cgrupo" span="3"-->
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Alice</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Josimara Santos</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Priscila Nelconlini</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Modelo</td>
+        </tr>
+        <tr>
+            <td>Carlos Otávio</td>
+            <td>M</td>
+            <td>24</td>
+            <td>Motoboy</td>
+        </tr>
+        <tr>
+            <td>Augusto Negusto</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Carpinteiro</td>
+        </tr>
+        <tr>
+            <td>Teodorico Sampaio</td>
+            <td>M</td>
+            <td>54</td>
+            <td>Médico</td>
+        </tr>
+    </table>
+</body>
+</html>

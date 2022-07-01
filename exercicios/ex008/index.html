@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: rgb(0, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Existem duas formas de colocar um texto em negrito: na forma semântica e não semântica.<br>Veja um exemplo de frase na forma não semântica, isto é, sem significado:<br><b>Essa frase está em negrito. Foi criada pelo código "b" no próprio HTML5.</b><br>Não possui significado (semântica), apenas num código ultrapassado de estilo.</p>
+    <p>Agora, vamos utilizar um código que também deixa o texto em negrito, entretanto, sua finalidade não é puramente estética.<br> Utilizando o código "STRONG", <strong>é possível deixar uma frase em negrito</strong>, mas a sua finalidade é <strong>DESTACAR</strong> algo importante, ou seja, dar <strong>ÊNFASE</strong>, e não apenas formatar.</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag "I" (não semântica).<br>Já nessa frase, aparentemente também temos um <em>termo em itálico</em>, PORÉM, foi escrito através do código "em", que significa "ênfase".<br> Claro, o seu sentido também é semântico, pois possui um significado, que é dar ênfase a algo.</p>
+    <h4>Observações:</h4>
+    <p>A pesar de ambas as formas (semântica e não semântica) serem válidas atualmente,<br>Gustavo Guanabara recomenda que só use as semânticas, pois muitas tags antigas do HTML podem deixar de funcionar (como as tags "b" para <b>negrito </b>e "i" para <i>itálico</i>).<br>Então lembre-se: "strong" para <strong>destacar</strong> e "em" para dar <em>ênfase</em>.</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos também criar um <mark style="background-color: lightpink;">texto marcado</mark> usando a tag "MARK".</p>
+    <p>Há duas maneiras de <mark>"colorir"</mark> a marcação do texto.<br>A primeira é chamando o CSS dentro da marcação "mark" ("mark style=background-color: lightpink;"><br> E a segunda é indo lá no cabeçalho (head) e <mark>chamando o CSS, que é o que vou fazer agora.</mark><br>O legal de usar o CSS no cabeçalho é que a tag "mark" funcionará em todas as marcações.<br>Se você quiser uma marcação específica, poderá colocar o próprio CSS ao lado da tag.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <h2>Texto excluído/deletado</h2>
+    <p>Podemos marcar um texto como excluído para indicar que <del>ele deve ser lido, mas não considerado.</del></p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um texto como inserido para <ins>uma ênfase e indicar que ele foi adicionado depois.</ins><br>Existe também o <u>sublinhado</u> com a tag "U" (não semântica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3. Basicamente, a tag "sup" serve para elevar as coisas ao expoente, ex: x<sup>2</sup> ou n<sup>15</sup>.</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O. Já a tag "sub" serve para abaixar as coisas, neste caso, o número 2 de H<sub>2</sub>O.</p>
+</body>
+</html>

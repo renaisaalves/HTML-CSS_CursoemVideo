@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementaryById('teste')</code> é escrito em linguagem JavaScript</p>
+    <p>Observe que o comando está escrito em uma fonte que facilita a compreensão da leitura.<br>Se o comando estiver escrito em uma fonte comum, a visualização do código seria dificultada, visto que cada letra possui um espaço diferente.<br>Então, para facilitar a visualização do código, os programadores optam pela tag "code" que espaçam as letras.</p>
+    <p>Além disso, há uma outra questão muito importante a ser dita.<br>Quando copiamos e colamos um código, ele fica literalmente reto, <strong>sem identação</strong>. Observe o exemplo abaixo:<br></p>
+    <p><code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0;
+        print (f'O número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+    </code></p>
+    <p>Viu como ficou ruim? É por isso que a <strong>identação</strong> é muito importante, para manter o código organizado, da maneira como ele foi escrito.<br>Veja um exemplo abaixo, de um código escrito em Python, agora com identação:</p>
+    <pre>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0;
+        print (f'O número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+    </code>
+    </pre>
+    <p>Para deixar um código com identação, basta colocar o código dentro da tag "PRE". A lógica seria: "CODE" dentro de "PRE".<br>Um outro macete é apertar SHIFT + TAB para fazer o código se deslocar para a esquerda. Dessa forma:</p>
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0;
+print (f'O número {num} é PAR')
+else:
+print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+        </code>
+        </pre>
+<p>Você também pode apertar somente a tecla TAB pra fazer com que o código se desloque para à direita.<br>A deslocação do código se chama TABULAÇÃO. </p>
+<h2>Citações simples</h2>
+<p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q> Podemos usar o código "Q" para fazer uma citação.</p>
+<h2>Citações completas</h2>
+<p>Segundo o site da Wikipedia, o Girls Generation:</p>
+<blockquote cite="https://pt.wikipedia.org/wiki/Girls'_Generation">
+    também conhecido como SNSD, é um grupo feminino sul-coreano formado pela S.M. Entertainment.
+    O grupo foi originalmente formado por 9 integrantes: Taeyeon, Jessica, Sunny, Tiffany, Hyoyeon
+    Yuri, Sooyoung, Yoona e Seohyun, mas em 2014, Jessica deixou o grupo. Ela não mantém mais contato 
+    com ninguém desde então. É como se a Jessica tivesse deletado toda a sua história na carreira do grupo.
+</blockquote>
+<h2>Abraviações</h2>
+<p>Estou estudando <abbr title= "Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> Estou adorando!<br>Essas abraviações podem ser colocadas no formato "abbr title= "" "/abbr"</p>
+<h2>Texto invertido</h2>
+<p>Essa tag serve para deixar as frases de trás pra frente, ou seja, ao contrário. Veja um exemplo:<br><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo><br>Frase original: <q>Estou aprendendo a criar coisas em HTML.</q></p>
+</body>
+</html>

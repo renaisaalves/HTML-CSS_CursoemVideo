@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* Como há três títulos h1, todos são da mesma cor. Entretanto, eu quero tornar o primeiro título diferente dos demais, ou seja, eu quero que ele tenha outra formatação. Porém, quando colocamos h1, todos os títulos são modificados ao mesmo tempo. É aí que entra a função identificação, que vai diferenciar os títulos de mesma categoria.
+Essa função é notada como id=. Pois bem, vou utilizá-la no h1 para diferenciá-lo dos demais: 
+No documento html, eu vou no h1 que quero e inserir <h1 id="principal"> Pronto! Isso vai tornar esse título diferenciado dos outros do mesmo nível.*/
+/* Uma coisa importante: os nomes mudam tanto no HTML quanto no CSS. 
+HTML é id        já em CSS é # (apenas um elemento)
+HTML é class     já em CSS é . (vários elementos) */
+
+body{
+    background-color: rgb(200, 228, 200);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+color:rgb(5, 65, 5)
+}
+
+h1#principal{
+color: white;
+background-color: green;
+text-align: center;
+}
+
+h2{
+color: green;
+font-weight: bold;
+}
+
+.basico{
+color:yellow;
+font-weight: bold;
+}
+
+.intermediario{
+color:yellowgreen;
+font-weight: bold;
+}
+
+.avancado{
+color:green;
+font-weight:bold;
+}
+
+/* Eu também consigo aplicar mais de uma classe no mesmo lugar. Basta adicionar uma classe no style.css e especificá-la ao lado de uma outra classe, apenas separando-as por espaço. Abaixo, eu criei uma classe chamada .destaque que será a 2ª classe a ser utilizada para demonstrar o exemplo. Mais uma vez: é só escrever destaque ao lado de uma outra classe lá no html e pronto! */
+
+.destaque{
+    background-color: rgb(188, 211, 141);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION - Legenda
+            TH - apenas um título
+            TD - Dado, informação
+            row = linha
+            col = coluna
+            THREAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+        Para dizer que os títulos (th) fazem parte de uma coluna, devemos escrever scope="col". Isso mostrará ao HTML que os dados (td) fazem parte desse título (th), garantindo a semântica do conteúdo. 
+    -->
+    <table>
+        <caption>Integrantes do grupo Twice</caption>
+        <thead>
+            <tr>
+                <th scope="col">Integrantes</th>
+                <th scope="col">Data de nascimento</th>
+                <th scope="col">País</th>
+                <th scope="col">Posição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="nayeon" class="member" >Nayeon</td>
+                <td>22/09/1995</td>
+                <td>Korea</td>
+                <td>Face, Center, Lead Vocal</td>
+            </tr>
+            <tr>
+                <td id="jeongyeon" class="member" >Jeongyeon</td>
+                <td>01/11/1996</td>
+                <td>Korea</td>
+                <td>Lead Vocal</td>
+            </tr>
+            <tr>
+                <td id="momo" class="member">Momo</td>
+                <td>09/11/1996</td>
+                <td>Japan</td>
+                <td>Main Dancer, Sub Rapper</td>
+            </tr>
+            <tr>
+                <td id="sana" class="member">Sana</td>
+                <td>29/12/1996</td>
+                <td>Japan</td>
+                <td>Lead Dancer, Sub Vocal</td>
+            </tr>
+            <tr>
+                <td id="jihyo" class="member">Jihyo</td>
+                <td>01/02/1997</td>
+                <td>Korea</td>
+                <td>Leader, Main Vocal</td>
+            </tr>
+            <tr>
+                <td id="mina" class="member">Mina</td>
+                <td>24/03/1997</td>
+                <td>Japan</td>
+                <td>Lead Vocal, Lead Dancer</td>
+            </tr>
+            <tr>
+                <td id="dahyun" class="member">Dahyun</td>
+                <td>28/05/1998</td>
+                <td>Korea</td>
+                <td>Lead Rapper</td>
+            </tr>
+            <tr>
+                <td id="chaeyoung" class="member">Chaeyoung</td>
+                <td>23/04/1999</td>
+                <td>Korea</td>
+                <td>Main Rapper</td>
+            </tr>
+            <tr>
+                <td id="tzuyu" class="member">Tzuyu</td>
+                <td>14/06/1999</td>
+                <td>Taiwan</td>
+                <td>Visual, Lead Dancer, Sub Vocal</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"> <!--Colspan serve para uma célula ocupar várias colunas-->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

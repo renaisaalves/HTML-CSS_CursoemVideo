@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgb(255, 211, 154);
+    padding: 5px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td.member {
+    font-weight: bold;
+}
+
+#nayeon {
+    background-color: pink;
+
+}
+
+#jeongyeon {
+    background-color: rgba(0, 0, 255, 0.493);
+    color: white;
+}
+
+#momo {
+    background-color: rgba(153, 83, 71, 0.719);
+    color: white;
+}
+
+#sana {
+    background-color: rgba(255, 225, 93, 0.753);
+}
+
+#jihyo {
+    background-color: rgba(255, 0, 0, 0.486);
+}
+
+#mina {
+    background-color: rgba(156, 10, 156, 0.527);
+}
+
+#dahyun {
+    background-color: rgba(0, 255, 0, 0.562);
+}
+
+#chaeyoung {
+    background-color: rgba(135, 206, 250, 0.623);
+}
+
+#tzuyu {
+    background-color: orange;
+}
+
+thead, tfoot {
+    background-color: gray;
+    color: white;
+}
+
+thead > tr > th { /*Permite que a barra da legenda acompanhe a tabela, ex: integrantes, posição, etc.*/
+    background-color: gray;
+    position: sticky;
+    top: -1px;
+}
+
+tbody > tr:nth-child(odd) { /* odd: ímpar */
+    background-color: rgb(253, 234, 237);
+}
+
+tbody > tr:nth-child(even) { /* even: par */
+    background-color: rgba(255, 211, 154, 0.479);
+}
+
+/* :nth-child é uma pseudoclasse que envolve vários elementos que vão receber os mesmos estilos*/
+

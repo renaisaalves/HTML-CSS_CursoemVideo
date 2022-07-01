@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color:azure;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+
+            /* Definimos acima a largura da borda (width), o estilo da borda (style) e a cor da borda (color). Porém, reparem que se fosse para digitar cada propriedade linha por linha, o código ficará extenso e cansativo. É por isso que existe uma propriedade chamada "shorthand" que veio com  facilita as definições dos valores de uma mesma propriedade. Veja um exemplo abaixo:
+            
+            border: 20px solid blue; 
+            
+            Na propriedade border, foi definido a largura (width), estilo (style) e cor (color) numa só linha! Isso facilita bastante na hora de digitar os códigos e principalmente encurtá-los. Nos próximos exemplos, usaremos shorthand para você compreender melhor a ideia. */
+
+            padding: 10px 20px 30px;
+            
+            /* Existe uma hierarquia que define o espaçamento. Essa hierarquia é baseada no sentido horário, o mesmo sentido em que o relógio funciona. O sentido horário começa com top (em cima), right (direita), bottom (embaixo) e left (esquerda). Quando você define o primeiro valor, você está definindo top (em cima). O próximo valor definido será right (direita) e assim em diante. 
+            
+            Detalhe: se você inserir os 4 valores, cada valor corresponderá ao sentido horário (como mencionado acima). Entretanto, se você definir apenas 1 valor, o navegador vai entender que você definiu o mesmo valor para todos os sentidos. Para ficar mais fácil de compreender, veja os exemplos abaixo:
+            
+            padding: 10px; (valerá para todos os sentidos)
+
+            padding: 10px 20px; (10px = top/bottom | 20px = right/left)
+
+            padding: 10px 20px 30px; (10px = top | 20px = right | 30px = bottom)
+            */
+
+            margin: 20px auto;
+
+            /* A hierarquia do sentido horário funciona em todas as propriedades, inclusive em margin. No exemplo acima, definimos 20px para todos os sentidos. Mas vem aí uma novidade: o valor auto ajusta o elemento para o centro da página. 
+            
+            Conheça agora a diferença entre margin e padding:
+            
+            Padding: da borda pra dentro; 
+            Margin: da borda pra fora; 
+            */
+
+            outline: 10px double skyblue;
+
+            /* Ainda existe uma outra propriedade chamada Outline, que funciona como uma "borda externa". Ela é pouco utilizada, mas é interessante mencioná-la aqui para um eventual projeto futuro. 
+            
+            Observe que ao invés de colocar "solid", eu coloquei um outro valor chamado "double". Esses são valores da propriedade "style", que define o estilo. Existem vários estilos de border e outline, mas não vou mencionar aqui. Qualquer coisa, basta acessar o site da w3c school. */
+        }
+
+        a {
+            background-color: rgb(241, 248, 230);
+            border: 3px solid yellowgreen;
+            padding: 3px;
+            margin: 10px;
+            outline:3px double green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
